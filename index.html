@@ -1,1 +1,128 @@
-<h1>Test</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Precision Metal Fabrication</title>
+    <style>
+        /* RESET & BASE STYLES */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; background-color: #f4f4f4; }
+        
+        /* COLORS */
+        :root {
+            --primary: #2c3e50; /* Dark Blue/Grey */
+            --accent: #e67e22;  /* Industrial Orange */
+            --light: #ecf0f1;
+            --dark: #1a252f;
+        }
+
+        /* HEADER */
+        header { background: var(--dark); color: white; padding: 1rem 0; text-align: center; }
+        header h1 { font-size: 1.8rem; text-transform: uppercase; letter-spacing: 2px; }
+        
+        /* HERO SECTION */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+        }
+        .hero h2 { font-size: 2.5rem; margin-bottom: 20px; }
+        .hero p { font-size: 1.2rem; max-width: 600px; margin: 0 auto 30px; }
+        .btn {
+            display: inline-block;
+            background: var(--accent);
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .btn:hover { background: #d35400; }
+
+        /* SERVICES GRID */
+        .container { max-width: 1100px; margin: 0 auto; padding: 60px 20px; }
+        .section-title { text-align: center; margin-bottom: 40px; color: var(--primary); }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .card h3 { color: var(--primary); margin-bottom: 15px; }
+
+        /* ABOUT & CONTACT */
+        .about { background: white; padding: 60px 20px; text-align: center; }
+        .contact { background: var(--primary); color: white; padding: 60px 20px; text-align: center; }
+        .contact a { color: var(--accent); text-decoration: none; font-weight: bold; }
+
+        /* FOOTER */
+        footer { background: var(--dark); color: #7f8c8d; text-align: center; padding: 20px; font-size: 0.9rem; }
+
+        /* MOBILE TWEAKS */
+        @media (max-width: 600px) {
+            .hero h2 { font-size: 1.8rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>[FRIEND'S BUSINESS NAME]</h1>
+    </header>
+
+    <section class="hero">
+        <h2>Custom Metal Fabrication & Welding</h2>
+        <p>High-quality steel, aluminum, and iron work for residential, commercial, and industrial projects. Built to last.</p>
+        <a href="#contact" class="btn">Get a Free Quote</a>
+    </section>
+
+    <div class="container">
+        <h2 class="section-title">Our Services</h2>
+        <div class="services-grid">
+            <div class="card">
+                <h3>Custom Welding</h3>
+                <p>Precision MIG, TIG, and Stick welding for repairs, custom builds, and structural work.</p>
+            </div>
+            <div class="card">
+                <h3>Structural Steel</h3>
+                <p>Beams, columns, and frameworks for construction and renovation projects.</p>
+            </div>
+            <div class="card">
+                <h3>Decorative Ironwork</h3>
+                <p>Gates, railings, fences, and custom artistic metal pieces for homes and businesses.</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="about">
+        <div class="container">
+            <h2 class="section-title">Why Choose Us?</h2>
+            <p>With over [X] years of experience, we pride ourselves on precision, safety, and durability. Whether it's a small repair or a large-scale fabrication job, we treat every project with the same level of care.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Ready to Start Your Project?</h2>
+        <p style="margin: 20px 0;">Call or text us today for a consultation.</p>
+        <p style="font-size: 1.5rem;">📞 <a href="tel:555-555-5555">(555) 555-5555</a></p>
+        <p style="margin-top: 10px;">📧 <a href="mailto:email@example.com">email@example.com</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 [FRIEND'S BUSINESS NAME]. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
